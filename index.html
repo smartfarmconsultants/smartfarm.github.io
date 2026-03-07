@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>SmartFarm Consultants Kenya – Thomas Muthama</title>
 <meta name="description" content="SmartFarm Consultants Kenya – Expert agribusiness consulting, precision farming, irrigation, soil health, and market access across Kenya."/>
+<link rel="canonical" href="https://smartfarmconsultants.github.io"/>
+<meta property="og:title" content="SmartFarm Consultants Kenya – Thomas Muthama"/>
+<meta property="og:description" content="Expert agricultural consulting bridging traditional farming wisdom with modern agronomy — helping farmers and agribusinesses across Kenya thrive."/>
+<meta property="og:url" content="https://smartfarmconsultants.github.io"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://smartfarmconsultants.github.io/images/team.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="referrer" content="strict-origin-when-cross-origin"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
@@ -377,7 +384,17 @@ footer ul li a:hover{color:var(--gold)}
   .f-grid{grid-template-columns:1fr}
   .social-grid{grid-template-columns:1fr}
   .gal-thumbs{grid-template-columns:repeat(4,1fr)}
-  .hero h1{font-size:2.4rem}
+  .hero h1{font-size:2rem;line-height:1.15}
+  .hero-content{padding:80px 5% 50px}
+  .hero-eyebrow{font-size:.62rem;padding:5px 14px;margin-bottom:16px}
+  .hero h1 .line{display:inline}
+  .hero h1 .line::after{content:' '}
+  .hero-desc{font-size:.88rem;margin-bottom:28px}
+  .hero-stats{flex-wrap:wrap}
+  .hstat{min-width:45%}
+  .gal-slide{height:280px}
+  .gal-thumb{height:60px}
+  .sc-feed blockquote,.sc-feed .tiktok-embed{min-width:unset !important;width:100% !important}
 }
 
 /* ─── REVEAL ─── */
@@ -385,6 +402,8 @@ footer ul li a:hover{color:var(--gold)}
 .rv2{opacity:0;transform:translateY(28px);transition:opacity .65s cubic-bezier(.4,0,.2,1) .12s,transform .65s cubic-bezier(.4,0,.2,1) .12s}
 .rv3{opacity:0;transform:translateY(28px);transition:opacity .65s cubic-bezier(.4,0,.2,1) .24s,transform .65s cubic-bezier(.4,0,.2,1) .24s}
 .rv.vis,.rv2.vis,.rv3.vis{opacity:1;transform:none}
+/* Fallback — ensure nothing stays hidden on slow/mobile */
+@media(max-width:768px){.rv,.rv2,.rv3{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -617,7 +636,7 @@ footer ul li a:hover{color:var(--gold)}
           <p>Thomas Muthama is a seasoned agricultural consultant based in Machakos, Kenya, with over a decade of hands-on experience in smart farming, agribusiness development, and rural livelihood improvement. He equips smallholder farmers with the tools, knowledge, and market connections they need to thrive in the modern economy.</p>
           <div class="tc-social">
             <a href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/" target="_blank" class="fb-link">📘 Follow on Facebook</a>
-            <a href="mailto:thomasmuthama44@gmail.com" title="Email">✉️</a>
+            <a href="/cdn-cgi/l/email-protection#e7938f888a86948a92938f868a86d3d3a7808a868e8bc984888a" title="Email">✉️</a>
             <a href="tel:+254711580975" title="Call/WhatsApp">📞</a>
           </div>
         </div>
@@ -715,7 +734,7 @@ footer ul li a:hover{color:var(--gold)}
     <div class="gal-dots" id="galDots"></div>
 
     <!-- Thumbnail strip -->
-    <div class="gal-thumbs rv3" id="galThumbs">
+    <div class="gal-thumbs" id="galThumbs">
       <!-- Farm -->
       <div class="gal-thumb thumb-fp active" onclick="galGoTo(0)"><img src="images/farm1.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(1)"><img src="images/farm2.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
@@ -785,7 +804,7 @@ footer ul li a:hover{color:var(--gold)}
         </div>
         <div class="sc-feed" style="padding:0">
           <div id="fb-root"></div>
-          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
           <div class="fb-page"
             data-href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/"
             data-tabs="timeline"
@@ -863,28 +882,18 @@ footer ul li a:hover{color:var(--gold)}
           <a href="https://www.instagram.com/smartfarmkenya/" target="_blank" class="sc-follow ig-f">➕ Follow</a>
         </div>
         <div class="sc-feed" style="padding:16px 20px 20px;gap:14px">
-          <!-- Instagram embed — replace YOUR_POST_SHORTCODE with the code from any Instagram post URL -->
-          <!-- e.g. from https://www.instagram.com/p/ABC123/ → shortcode is ABC123 -->
-          <div style="border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">
-            <blockquote
-              class="instagram-media"
-              data-instgrm-captioned
-              data-instgrm-permalink="https://www.instagram.com/p/YOUR_POST_SHORTCODE/"
-              data-instgrm-version="14"
-              style="background:#fff;border-radius:12px;max-width:100%;min-width:260px;width:100%;margin:0">
-            </blockquote>
+          <div style="border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:20px;text-align:center">
+            <div style="font-size:2rem;margin-bottom:8px">📷</div>
+            <p style="font-size:.78rem;color:rgba(255,255,255,.6);margin-bottom:12px;line-height:1.6">Follow <strong>@smartfarmkenya</strong> on Instagram for daily farm updates, tips &amp; success stories</p>
+            <a href="https://www.instagram.com/smartfarmkenya/" target="_blank"
+              style="display:inline-block;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366);color:#fff;padding:8px 20px;border-radius:50px;font-size:.75rem;font-weight:700;text-decoration:none">📷 Follow on Instagram</a>
           </div>
-          <!-- TikTok embed — replace YOUR_TIKTOK_VIDEO_ID with the number from a TikTok video URL -->
-          <div style="border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);margin-top:14px">
-            <blockquote
-              class="tiktok-embed"
-              cite="https://www.tiktok.com/@smartfarmkenya/video/YOUR_TIKTOK_VIDEO_ID"
-              data-video-id="YOUR_TIKTOK_VIDEO_ID"
-              style="max-width:100%;min-width:260px">
-              <section></section>
-            </blockquote>
+          <div style="border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:20px;text-align:center;margin-top:14px">
+            <div style="font-size:2rem;margin-bottom:8px">🎵</div>
+            <p style="font-size:.78rem;color:rgba(255,255,255,.6);margin-bottom:12px;line-height:1.6">Watch <strong>@smartfarmkenya</strong> on TikTok for short farm videos, tutorials &amp; behind-the-scenes</p>
+            <a href="https://www.tiktok.com/@smartfarmkenya" target="_blank"
+              style="display:inline-block;background:#010101;color:#fff;border:1px solid rgba(255,255,255,.2);padding:8px 20px;border-radius:50px;font-size:.75rem;font-weight:700;text-decoration:none">🎵 Follow on TikTok</a>
           </div>
-          <p style="font-size:.72rem;color:rgba(255,255,255,.35);text-align:center;margin-top:6px">Replace shortcodes above with your real Instagram post & TikTok video IDs</p>
         </div>
         <div class="sc-cta"><a href="https://www.instagram.com/smartfarmkenya/" target="_blank" class="ig-cta">📷 Visit Instagram / TikTok →</a></div>
       </div>
@@ -1064,9 +1073,4 @@ document.getElementById('wa-btn').addEventListener('mouseleave', function(){ thi
 </script>
 
 <!-- Instagram embed script -->
-<script async src="//www.instagram.com/embed.js"></script>
-<!-- TikTok embed script -->
-<script async src="https://www.tiktok.com/embed.js"></script>
-
-</body>
-</html>
+<script as
