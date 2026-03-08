@@ -306,21 +306,25 @@ h2.st em{color:var(--gold);font-style:italic}
 .tm-bg{background:var(--off)}
 .tm-hd{text-align:center;margin-bottom:52px}
 .tm-hd .ey{justify-content:center}
-.tm-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1000px;margin:0 auto}
+.tm-grid{display:grid;grid-template-columns:1fr;gap:32px;max-width:1100px;margin:0 auto}
+.tm-ceo-row{display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start}
+.tm-members-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .tm-card{border-radius:28px;overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.1);border:1.5px solid rgba(0,0,0,.04);transition:all .3s}
 .tm-card:hover{transform:translateY(-6px);box-shadow:0 32px 80px rgba(0,0,0,.15)}
 .tc-top{background:linear-gradient(145deg,var(--gd),#6B8E23);height:260px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .tc-top::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.04'%3E%3Cpath d='M30 0l30 30-30 30L0 30z'/%3E%3C/g%3E%3C/svg%3E")}
 .tc-top .av{font-size:7rem;position:relative;z-index:1}
-.tc-body{background:#fff;padding:32px;text-align:center}
-.tc-body h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;margin-bottom:5px}
-.tc-body .role{color:var(--gl);font-weight:600;font-size:.82rem;margin-bottom:14px;letter-spacing:.5px}
-.tc-body p{color:var(--mu);font-size:.84rem;line-height:1.88;margin-bottom:22px}
+.tc-body{background:#fff;padding:28px;text-align:center}
+.tc-body h3{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;margin-bottom:5px}
+.tc-body .role{color:var(--gl);font-weight:600;font-size:.8rem;margin-bottom:12px;letter-spacing:.5px}
+.tc-body p{color:var(--mu);font-size:.83rem;line-height:1.85;margin-bottom:20px}
+.tc-body.compact p{font-size:.8rem;line-height:1.75;margin-bottom:14px}
 .tc-social{display:flex;gap:11px;justify-content:center;flex-wrap:wrap}
-.tc-social a{width:44px;height:44px;background:var(--g);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.95rem;text-decoration:none;transition:all .25s}
+.tc-social a{width:40px;height:40px;background:var(--g);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;text-decoration:none;transition:all .25s}
 .tc-social a:hover{background:var(--gold);transform:translateY(-3px);box-shadow:0 7px 20px rgba(232,160,32,.4)}
 .tc-social .fb-link{width:auto;padding:0 18px;border-radius:50px;background:#1877F2;gap:6px;font-size:.78rem;font-weight:700}
 .tc-social .fb-link:hover{background:#0d5bbf}
+.tc-badge{display:inline-block;background:linear-gradient(135deg,var(--g),var(--gl));color:#fff;font-size:.65rem;font-weight:700;padding:3px 12px;border-radius:50px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
 
 /* ─── CONTACT ─── */
 .ct-bg{background:var(--cream)}
@@ -371,7 +375,8 @@ footer ul li a:hover{color:var(--gold)}
 
 /* ─── RESPONSIVE ─── */
 @media(max-width:1000px){
-  .hero-content,.ab-grid,.wy-grid,.ct-grid,.social-grid,.tm-grid{grid-template-columns:1fr;gap:40px}
+  .hero-content,.ab-grid,.wy-grid,.ct-grid,.social-grid,.tm-grid,.tm-ceo-row{grid-template-columns:1fr;gap:40px}
+  .tm-members-row{grid-template-columns:1fr 1fr}
   .hero-panel{display:none}
   .sv-grid{grid-template-columns:1fr 1fr}
   .f-grid{grid-template-columns:1fr 1fr;gap:28px}
@@ -384,6 +389,7 @@ footer ul li a:hover{color:var(--gold)}
   .f-grid{grid-template-columns:1fr}
   .social-grid{grid-template-columns:1fr}
   .gal-thumbs{grid-template-columns:repeat(4,1fr)}
+  .tm-members-row{grid-template-columns:1fr}
   .hero h1{font-size:2rem;line-height:1.15}
   .hero-content{padding:80px 5% 50px}
   .hero-eyebrow{font-size:.62rem;padding:5px 14px;margin-bottom:16px}
@@ -623,43 +629,94 @@ footer ul li a:hover{color:var(--gold)}
     </div>
     <div class="tm-grid">
 
-      <!-- FOUNDER CARD -->
-      <div class="tm-card rv2">
-        <div class="tc-top" style="height:280px;padding:0">
-          <img src="images/ceo.png" alt="Thomas Muthama" loading="lazy"
-            onerror="this.onerror=null;var t=this;var exts=['ceo.jpg','ceo.jpeg','CEO.jpg','CEO.png'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
-            style="width:100%;height:100%;object-fit:cover;object-position:center top;position:relative;z-index:1">
-        </div>
-        <div class="tc-body">
-          <h3>Thomas Muthama</h3>
-          <div class="role">Founder & Lead Agricultural Consultant</div>
-          <p>Thomas Muthama is a seasoned agricultural consultant based in Machakos, Kenya, with over a decade of hands-on experience in smart farming, agribusiness development, and rural livelihood improvement. He equips smallholder farmers with the tools, knowledge, and market connections they need to thrive in the modern economy.</p>
-          <div class="tc-social">
-            <a href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/" target="_blank" class="fb-link">📘 Follow on Facebook</a>
-            <a href="/cdn-cgi/l/email-protection#e7938f888a86948a92938f868a86d3d3a7808a868e8bc984888a" title="Email">✉️</a>
-            <a href="tel:+254711580975" title="Call/WhatsApp">📞</a>
+      <!-- CEO ROW -->
+      <div class="tm-ceo-row rv2">
+
+        <!-- CEO PHOTO CARD -->
+        <div class="tm-card" style="overflow:hidden">
+          <div style="width:100%;aspect-ratio:3/4;min-height:380px;overflow:hidden">
+            <img src="images/ceo.png" alt="Thomas Muthama" loading="lazy"
+              onerror="this.onerror=null;var t=this;var exts=['ceo.jpg','ceo.jpeg','CEO.jpg','CEO.png'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
+              style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
           </div>
         </div>
-      </div>
 
-      <!-- TEAM CARD -->
-      <div class="tm-card rv3">
-        <div class="tc-top" style="height:280px;padding:0">
-          <img src="images/team.png" alt="SmartFarm Kenya Team" loading="lazy"
-            onerror="this.onerror=null;var t=this;var exts=['team.jpg','team.jpeg','Team.png','Team.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;position:relative;z-index:1">
-        </div>
-        <div class="tc-body">
-          <h3>Our Field Team</h3>
-          <div class="role">Agronomists · Irrigation Engineers · Market Specialists</div>
-          <p>Behind every successful farm transformation is a dedicated team of certified agronomists, irrigation engineers, and agribusiness specialists. Together we bring hands-on expertise directly to your farm — from soil testing and crop planning to market linkage and training workshops across Kenya.</p>
-          <div class="tc-social">
-            <a href="#contact" title="Work With Us" style="font-size:.75rem;width:auto;padding:0 16px;border-radius:50px;gap:6px;font-weight:700">🤝 Work With Us</a>
-            <a href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/" target="_blank" title="Facebook">📘</a>
+        <!-- CEO BIO CARD -->
+        <div class="tm-card" style="display:flex;flex-direction:column;justify-content:center">
+          <div class="tc-body" style="padding:40px">
+            <div class="tc-badge">👑 Founder & CEO</div>
+            <h3 style="font-size:1.8rem;margin-bottom:6px">Thomas Muthama</h3>
+            <div class="role" style="font-size:.88rem;margin-bottom:18px">Lead Agricultural Consultant · Machakos, Kenya</div>
+            <p>Thomas Muthama is a seasoned agricultural consultant with over a decade of hands-on experience in smart farming, agribusiness development, and rural livelihood improvement across Kenya. He bridges the gap between traditional farming wisdom and modern agronomy — equipping smallholder farmers with the tools, knowledge, and market connections they need to thrive in today's economy.</p>
+            <p style="margin-bottom:24px">Under his leadership, SmartFarm Consultants Kenya has transformed <strong>500+ farms</strong> across <strong>10+ counties</strong>, delivering measurable yield improvements and sustainable income growth for farming families.</p>
+            <div class="tc-social" style="justify-content:flex-start">
+              <a href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/" target="_blank" class="fb-link">📘 Follow on Facebook</a>
+              <a href="mailto:thomasmuthama44@gmail.com" title="Email Thomas">✉️</a>
+              <a href="tel:+254711580975" title="Call/WhatsApp">📞</a>
+            </div>
           </div>
         </div>
+
       </div>
 
+      <!-- TEAM MEMBERS ROW -->
+      <div class="tm-members-row rv3">
+
+        <!-- MUTISYA -->
+        <div class="tm-card">
+          <div class="tc-top" style="height:240px;padding:0">
+            <img src="images/mutisya.png" alt="Mutisya" loading="lazy"
+              onerror="this.onerror=null;var t=this;var exts=['mutisya.jpg','mutisya.jpeg','Mutisya.png','Mutisya.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
+              style="width:100%;height:100%;object-fit:cover;object-position:center top">
+          </div>
+          <div class="tc-body compact">
+            <div class="tc-badge">🛠️ Technician</div>
+            <h3>Mutisya</h3>
+            <div class="role">SmartFarm Field Technician</div>
+            <p>A dedicated SmartFarm technician involved in day-to-day farm operations — from field preparation and crop monitoring to hands-on support during planting and harvest seasons.</p>
+            <div class="tc-social">
+              <a href="#contact" title="Contact">📞</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MWANZIA -->
+        <div class="tm-card">
+          <div class="tc-top" style="height:240px;padding:0">
+            <img src="images/mwanzia.png" alt="Mwanzia" loading="lazy"
+              onerror="this.onerror=null;var t=this;var exts=['mwanzia.jpg','mwanzia.jpeg','Mwanzia.png','Mwanzia.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
+              style="width:100%;height:100%;object-fit:cover;object-position:center top">
+          </div>
+          <div class="tc-body compact">
+            <div class="tc-badge">🛠️ Technician</div>
+            <h3>Mwanzia</h3>
+            <div class="role">SmartFarm Field Technician</div>
+            <p>Supports SmartFarm's field activities across client farms — assisting with irrigation setup, soil sampling, input application and general farm maintenance to keep operations running smoothly.</p>
+            <div class="tc-social">
+              <a href="#contact" title="Contact">📞</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- DANIEL -->
+        <div class="tm-card">
+          <div class="tc-top" style="height:240px;padding:0">
+            <img src="images/daniel.png" alt="Daniel" loading="lazy"
+              onerror="this.onerror=null;var t=this;var exts=['daniel.jpg','daniel.jpeg','Daniel.png','Daniel.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
+              style="width:100%;height:100%;object-fit:cover;object-position:center top">
+          </div>
+          <div class="tc-body compact">
+            <div class="tc-badge">🛠️ Technician</div>
+            <h3>Daniel</h3>
+            <div class="role">SmartFarm Field Technician</div>
+            <p>An active member of the SmartFarm ground team — carrying out general agricultural activities, client farm support and on-site tasks that drive the day-to-day success of our consulting work.</p>
+            <div class="tc-social">
+              <a href="#contact" title="Contact">📞</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
@@ -687,10 +744,10 @@ footer ul li a:hover{color:var(--gold)}
         <!-- ── FARM PHOTOS (farm1–farm12) ── -->
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm1.png';" src="images/farm1.png" alt="Farm Photo 1" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>SmartFarm Kenya Operations</h4><p>Machakos County, Kenya</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm2.png';" src="images/farm2.png" alt="Farm Photo 2" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Farm Management in Action</h4><p>Precision agribusiness, Kenya</p></div></div>
-        <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm3.png';" src="images/farm3.png" alt="Farm Photo 3" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Field Operations</h4><p>Expert agronomic support on the ground</p></div></div>
-        <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm4.png';" src="images/farm4.png" alt="Farm Photo 4" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Soil Preparation</h4><p>Building healthy soil for maximum yield</p></div></div>
+        <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm3.jpg';" src="images/farm3.jpg" alt="Farm Photo 3" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Field Operations</h4><p>Expert agronomic support on the ground</p></div></div>
+        <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm4.jpg';" src="images/farm4.jpg" alt="Farm Photo 4" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Soil Preparation</h4><p>Building healthy soil for maximum yield</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm5.png';" src="images/farm5.png" alt="Farm Photo 5" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Farm Infrastructure</h4><p>Modern farming facilities, Machakos</p></div></div>
-        <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm6.png';" src="images/farm6.png" alt="Farm Photo 6" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Crop Monitoring</h4><p>Regular field assessments for optimal growth</p></div></div>
+        <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm6.jpg';" src="images/farm6.jpg" alt="Farm Photo 6" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Crop Monitoring</h4><p>Regular field assessments for optimal growth</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm7.png';" src="images/farm7.png" alt="Farm Photo 7" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Harvest Season</h4><p>Reaping the rewards of expert guidance</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm8.png';" src="images/farm8.png" alt="Farm Photo 8" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>SmartFarm Fields</h4><p>Sustainable agriculture, Kenya</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm9.png';" src="images/farm9.png" alt="Farm Photo 9" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Farm Landscape</h4><p>Thriving farmland under expert care</p></div></div>
@@ -738,10 +795,10 @@ footer ul li a:hover{color:var(--gold)}
       <!-- Farm -->
       <div class="gal-thumb thumb-fp active" onclick="galGoTo(0)"><img onerror="this.onerror=null;this.src='images/Farm1.png';" src="images/farm1.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(1)"><img onerror="this.onerror=null;this.src='images/Farm2.png';" src="images/farm2.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
-      <div class="gal-thumb thumb-fp" onclick="galGoTo(2)"><img onerror="this.onerror=null;this.src='images/Farm3.png';" src="images/farm3.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
-      <div class="gal-thumb thumb-fp" onclick="galGoTo(3)"><img onerror="this.onerror=null;this.src='images/Farm4.png';" src="images/farm4.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+      <div class="gal-thumb thumb-fp" onclick="galGoTo(2)"><img onerror="this.onerror=null;this.src='images/Farm3.jpg';" src="images/farm3.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+      <div class="gal-thumb thumb-fp" onclick="galGoTo(3)"><img onerror="this.onerror=null;this.src='images/Farm4.jpg';" src="images/farm4.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(4)"><img onerror="this.onerror=null;this.src='images/Farm5.png';" src="images/farm5.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
-      <div class="gal-thumb thumb-fp" onclick="galGoTo(5)"><img onerror="this.onerror=null;this.src='images/Farm6.png';" src="images/farm6.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+      <div class="gal-thumb thumb-fp" onclick="galGoTo(5)"><img onerror="this.onerror=null;this.src='images/Farm6.jpg';" src="images/farm6.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(6)"><img onerror="this.onerror=null;this.src='images/Farm7.png';" src="images/farm7.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(7)"><img onerror="this.onerror=null;this.src='images/Farm8.png';" src="images/farm8.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(8)"><img onerror="this.onerror=null;this.src='images/Farm9.png';" src="images/farm9.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
@@ -804,7 +861,7 @@ footer ul li a:hover{color:var(--gold)}
         </div>
         <div class="sc-feed" style="padding:0">
           <div id="fb-root"></div>
-          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
           <div class="fb-page"
             data-href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/"
             data-tabs="timeline"
@@ -1069,8 +1126,4 @@ setTimeout(function () {
 
 /* ── WHATSAPP HOVER ── */
 document.getElementById('wa-btn').addEventListener('mouseenter', function(){ this.style.transform='translateY(-2px)';this.style.boxShadow='0 10px 32px rgba(37,211,102,.5)'; });
-document.getElementById('wa-btn').addEventListener('mouseleave', function(){ this.style.transform='';this.style.boxShadow='0 6px 24px rgba(37,211,102,.35)'; });
-</script>
-
-<!-- Instagram embed script -->
-<script as
+document.getElementById('wa-btn').addEventListener('mousel
