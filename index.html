@@ -55,7 +55,6 @@ nav.scrolled{height:60px;box-shadow:0 4px 30px rgba(0,0,0,.3)}
   content:'';position:absolute;inset:0;
   background:linear-gradient(135deg,rgba(42,58,10,.82) 0%,rgba(42,58,10,.55) 50%,rgba(4,26,15,.3) 100%);
 }
-/* Placeholder slides with CSS backgrounds */
 .slide-1{background:linear-gradient(135deg,#3a4f10 0%,#6B8E23 40%,#8cc751 70%,#9ACD32 100%)}
 .slide-2{background:linear-gradient(135deg,#2a3a0a 0%,#4a6318 40%,#6B8E23 70%,#8cc751 100%)}
 .slide-3{background:linear-gradient(135deg,#1e2a06 0%,#3a4f10 50%,#6B8E23 80%,#9ACD32 100%)}
@@ -98,7 +97,6 @@ nav.scrolled{height:60px;box-shadow:0 4px 30px rgba(0,0,0,.3)}
 .hstat .n{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1;display:block;margin-bottom:4px}
 .hstat .l{font-size:.68rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:1.5px}
 
-/* hero right panel */
 .hero-panel{
   background:rgba(255,255,255,.07);backdrop-filter:blur(20px);
   border:1px solid rgba(255,255,255,.12);border-radius:24px;
@@ -118,7 +116,6 @@ nav.scrolled{height:60px;box-shadow:0 4px 30px rgba(0,0,0,.3)}
 .hero-float .fi{font-size:1.5rem}
 .hero-float .ft{font-size:.71rem;font-weight:700;color:var(--gx);line-height:1.4}
 
-/* slide indicators */
 .slide-dots{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10}
 .sdot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:all .3s}
 .sdot.active{width:24px;border-radius:4px;background:var(--gold)}
@@ -218,16 +215,12 @@ h2.st em{color:var(--gold);font-style:italic}
 .gal-tabs{display:flex;gap:10px;justify-content:center;margin-bottom:36px;flex-wrap:wrap}
 .gtab{background:var(--off);border:1.5px solid transparent;border-radius:50px;padding:9px 22px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .25s;color:var(--mu)}
 .gtab.active,.gtab:hover{background:var(--g);color:#fff;border-color:var(--g)}
-/* Main gallery slider */
 .gal-slider-wrap{position:relative;overflow:hidden;border-radius:24px;background:var(--gx);margin-bottom:24px}
 .gal-slider{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1)}
 .gal-slide{min-width:100%;height:480px;flex-shrink:0;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .gal-ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
-/* Farm photos placeholder */
 .gal-ph.fp{background:linear-gradient(145deg,#2a3a0a 0%,#4a6318 35%,#6B8E23 65%,#8cc751 100%)}
-/* Crop gallery placeholder */
 .gal-ph.cg{background:linear-gradient(145deg,#2a4a05 0%,#4a7a10 50%,#009900 100%)}
-/* Irrigation systems placeholder */
 .gal-ph.ir{background:linear-gradient(145deg,#0a2233 0%,#0e4b72 50%,#1a7ab5 100%)}
 .gal-ph .ph-icon-big{font-size:8rem;opacity:.2;position:absolute;animation:float-icon 6s ease-in-out infinite}
 @keyframes float-icon{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(3deg)}}
@@ -242,9 +235,8 @@ h2.st em{color:var(--gold);font-style:italic}
 .gal-nav{position:absolute;top:50%;transform:translateY(-50%);display:flex;justify-content:space-between;width:100%;padding:0 16px;pointer-events:none;z-index:5}
 .gal-arrow{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s;pointer-events:all}
 .gal-arrow:hover{background:var(--gold);border-color:var(--gold);color:var(--gx)}
-/* Thumbnail grid */
 .gal-thumbs{display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
-.gal-thumb{height:90px;border-radius:12px;overflow:hidden;cursor:pointer;position:relative;transition:all .25s}
+.gal-thumb{height:90px;border-radius:12px;overflow:hidden;cursor:pointer;position:relative;transition:all .25px}
 .gal-thumb:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
 .gal-thumb.active{box-shadow:0 0 0 3px var(--gold)}
 .gal-thumb-ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;opacity:.7;transition:opacity .25s}
@@ -252,7 +244,6 @@ h2.st em{color:var(--gold);font-style:italic}
 .thumb-fp{background:linear-gradient(135deg,#2a3a0a,#6B8E23)}
 .thumb-cg{background:linear-gradient(135deg,#2a4a05,#009900)}
 .thumb-ir{background:linear-gradient(135deg,#0a2233,#1a7ab5)}
-/* Dots */
 .gal-dots{display:flex;justify-content:center;gap:8px;margin-top:20px}
 .gdot{width:8px;height:8px;border-radius:50%;background:rgba(0,0,0,.15);cursor:pointer;transition:all .3s}
 .gdot.active{width:22px;border-radius:4px;background:var(--g)}
@@ -368,7 +359,7 @@ footer ul li a{color:rgba(255,255,255,.4);text-decoration:none;font-size:.83rem;
 footer ul li a:hover{color:var(--gold)}
 .f-bot{border-top:1px solid rgba(255,255,255,.07);padding-top:22px;display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#fff;flex-wrap:wrap;gap:10px}
 
-/* ─── AD (smaller) ─── */
+/* ─── AD ─── */
 .ad-banner{background:#f0f0e8;border:1px dashed #ccc;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;color:#bbb;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;position:relative;overflow:hidden}
 .ad-label{position:absolute;top:4px;left:8px;font-size:.58rem;color:#ccc;letter-spacing:1px}
 .ad-strip{width:100%;height:60px;max-width:728px;margin:0 auto}
@@ -408,7 +399,6 @@ footer ul li a:hover{color:var(--gold)}
 .rv2{opacity:0;transform:translateY(28px);transition:opacity .65s cubic-bezier(.4,0,.2,1) .12s,transform .65s cubic-bezier(.4,0,.2,1) .12s}
 .rv3{opacity:0;transform:translateY(28px);transition:opacity .65s cubic-bezier(.4,0,.2,1) .24s,transform .65s cubic-bezier(.4,0,.2,1) .24s}
 .rv.vis,.rv2.vis,.rv3.vis{opacity:1;transform:none}
-/* Fallback — ensure nothing stays hidden on slow/mobile */
 @media(max-width:768px){.rv,.rv2,.rv3{opacity:1;transform:none}}
 </style>
 </head>
@@ -432,20 +422,13 @@ footer ul li a:hover{color:var(--gold)}
   </ul>
 </nav>
 
-<!-- ═══ HERO – FULL BACKGROUND WITH SLIDER ═══ -->
+<!-- ═══ HERO ═══ -->
 <section class="hero" id="home">
   <div class="hero-slides">
-    <div class="hero-slide slide-1 active">
-      <div class="slide-art">🌾</div>
-    </div>
-    <div class="hero-slide slide-2">
-      <div class="slide-art">🌱</div>
-    </div>
-    <div class="hero-slide slide-3">
-      <div class="slide-art">💧</div>
-    </div>
+    <div class="hero-slide slide-1 active"><div class="slide-art">🌾</div></div>
+    <div class="hero-slide slide-2"><div class="slide-art">🌱</div></div>
+    <div class="hero-slide slide-3"><div class="slide-art">💧</div></div>
   </div>
-
   <div class="hero-content">
     <div class="hero-left rv">
       <div class="hero-eyebrow"><span class="dot"></span>Est. Kenya · Smart Agriculture</div>
@@ -487,8 +470,6 @@ footer ul li a:hover{color:var(--gold)}
       </div>
     </div>
   </div>
-
-  <!-- Slide dots -->
   <div class="slide-dots">
     <div class="sdot active" onclick="goSlide(0)"></div>
     <div class="sdot" onclick="goSlide(1)"></div>
@@ -542,9 +523,12 @@ footer ul li a:hover{color:var(--gold)}
   </div>
 </section>
 
-<!-- ═══ AD STRIP ═══ -->
+<!-- ═══ AD STRIP MID 1 ═══ -->
 <div style="background:#fff;padding:12px 5%;display:flex;justify-content:center">
-  <div class="ad-banner ad-strip"><span class="ad-label">Advertisement</span>Ad Slot — 728×60</div>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9268211848028933" crossorigin="anonymous"></script>
+  <!-- Mid1 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9268211848028933" data-ad-slot="8813135727" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 </div>
 
 <!-- ═══ SERVICES ═══ -->
@@ -618,7 +602,6 @@ footer ul li a:hover{color:var(--gold)}
   </div>
 </section>
 
-
 <!-- ═══ TEAM ═══ -->
 <section class="sec tm-bg" id="team">
   <div class="con">
@@ -628,11 +611,7 @@ footer ul li a:hover{color:var(--gold)}
       <p class="sd" style="margin:0 auto">Passionate professionals with deep roots in Kenya's land and a shared vision for its agricultural future.</p>
     </div>
     <div class="tm-grid">
-
-      <!-- CEO ROW -->
       <div class="tm-ceo-row rv2">
-
-        <!-- CEO PHOTO CARD -->
         <div class="tm-card" style="overflow:hidden">
           <div style="width:100%;aspect-ratio:3/4;min-height:380px;overflow:hidden">
             <img src="images/ceo.png" alt="CEO" loading="lazy"
@@ -640,8 +619,6 @@ footer ul li a:hover{color:var(--gold)}
               style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
           </div>
         </div>
-
-        <!-- CEO BIO CARD -->
         <div class="tm-card" style="display:flex;flex-direction:column;justify-content:center">
           <div class="tc-body" style="padding:40px">
             <div class="tc-badge">👑 Founder & CEO</div>
@@ -651,24 +628,19 @@ footer ul li a:hover{color:var(--gold)}
             <p style="margin-bottom:24px">Under his leadership, SmartFarm Consultants Kenya has transformed <strong>500+ farms</strong> across <strong>10+ counties</strong>, delivering measurable yield improvements and sustainable income growth for farming families.</p>
             <div class="tc-social" style="justify-content:flex-start">
               <a href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/" target="_blank" class="fb-link">📘 Follow on Facebook</a>
-              <a href="/cdn-cgi/l/email-protection#f6829e999b97859b83829e979b97c2c2b6919b979f9ad895999b" title="Email Thomas">✉️</a>
+              <a href="#" title="Email Thomas">✉️</a>
               <a href="tel:+254711580975" title="Call/WhatsApp">📞</a>
             </div>
           </div>
         </div>
-
       </div>
-
-      <!-- TEAM MEMBERS ROW -->
       <div class="tm-members-row rv3">
-
-        <!-- MUTISYA -->
         <div class="tm-card">
           <div class="tc-top" style="padding:0;height:auto">
             <div style="width:100%;aspect-ratio:3/4;overflow:hidden">
-            <img src="images/mutisya.png" alt="Mutisya" loading="lazy"
-              onerror="this.onerror=null;var t=this;var exts=['mutisya.jpg','mutisya.jpeg','Mutisya.png','Mutisya.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
-              style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
+              <img src="images/mutisya.png" alt="Mutisya" loading="lazy"
+                onerror="this.onerror=null;var t=this;var exts=['mutisya.jpg','mutisya.jpeg','Mutisya.png','Mutisya.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
+                style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
             </div>
           </div>
           <div class="tc-body compact">
@@ -682,14 +654,12 @@ footer ul li a:hover{color:var(--gold)}
             </div>
           </div>
         </div>
-
-        <!-- MWANZIA -->
         <div class="tm-card">
           <div class="tc-top" style="padding:0;height:auto">
             <div style="width:100%;aspect-ratio:3/4;overflow:hidden">
-            <img src="images/mwanzia.png" alt="Mwanzia" loading="lazy"
-              onerror="this.onerror=null;var t=this;var exts=['mwanzia.jpg','mwanzia.jpeg','Mwanzia.png','Mwanzia.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
-              style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
+              <img src="images/mwanzia.png" alt="Mwanzia" loading="lazy"
+                onerror="this.onerror=null;var t=this;var exts=['mwanzia.jpg','mwanzia.jpeg','Mwanzia.png','Mwanzia.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
+                style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
             </div>
           </div>
           <div class="tc-body compact">
@@ -703,14 +673,12 @@ footer ul li a:hover{color:var(--gold)}
             </div>
           </div>
         </div>
-
-        <!-- DANIEL -->
         <div class="tm-card">
           <div class="tc-top" style="padding:0;height:auto">
             <div style="width:100%;aspect-ratio:3/4;overflow:hidden">
-            <img src="images/daniel.png" alt="Daniel" loading="lazy"
-              onerror="this.onerror=null;var t=this;var exts=['daniel.jpg','daniel.jpeg','Daniel.png','Daniel.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
-              style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
+              <img src="images/daniel.png" alt="Daniel" loading="lazy"
+                onerror="this.onerror=null;var t=this;var exts=['daniel.jpg','daniel.jpeg','Daniel.png','Daniel.jpg'];var i=0;function tryNext(){if(i<exts.length){t.src='images/'+exts[i++]}else{t.style.display='none'}}t.onerror=tryNext;tryNext();"
+                style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
             </div>
           </div>
           <div class="tc-body compact">
@@ -724,7 +692,6 @@ footer ul li a:hover{color:var(--gold)}
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -736,21 +703,16 @@ footer ul li a:hover{color:var(--gold)}
     <div class="gal-hd rv">
       <span class="ey">Our Work</span>
       <h2 class="st">Farm <span>Gallery</span></h2>
-      <p class="sd">A glimpse of the farms, fields, and irrigation systems we work with across Kenya. Upload your own photos to personalise this section.</p>
+      <p class="sd">A glimpse of the farms, fields, and irrigation systems we work with across Kenya.</p>
     </div>
-
-    <!-- Category tabs -->
     <div class="gal-tabs rv2">
       <button class="gtab active" onclick="switchGallery('all')">All</button>
       <button class="gtab" onclick="switchGallery('farm')">📸 Farm Photos</button>
       <button class="gtab" onclick="switchGallery('crops')">🌾 Crop Gallery</button>
       <button class="gtab" onclick="switchGallery('irrigation')">💧 Irrigation Systems</button>
     </div>
-
-    <!-- Main slider -->
     <div class="gal-slider-wrap rv3" id="galSlider">
       <div class="gal-slider" id="galTrack">
-        <!-- ── FARM PHOTOS (farm1–farm12) ── -->
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm1.png';" src="images/farm1.png" alt="Farm Photo 1" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>SmartFarm Kenya Operations</h4><p>Machakos County, Kenya</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm2.png';" src="images/farm2.png" alt="Farm Photo 2" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Farm Management in Action</h4><p>Precision agribusiness, Kenya</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm3.jpg';" src="images/farm3.jpg" alt="Farm Photo 3" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Field Operations</h4><p>Expert agronomic support on the ground</p></div></div>
@@ -763,7 +725,6 @@ footer ul li a:hover{color:var(--gold)}
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm10.png';" src="images/farm10.png" alt="Farm Photo 10" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Precision Farming</h4><p>Data-driven decisions for better yields</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm11.png';" src="images/farm11.png" alt="Farm Photo 11" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Farm Expansion</h4><p>Growing operations across Machakos County</p></div></div>
         <div class="gal-slide" data-cat="farm"><img onerror="this.onerror=null;this.src='images/Farm12.png';" src="images/farm12.png" alt="Farm Photo 12" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>SmartFarm at Work</h4><p>Professional agribusiness consultancy</p></div></div>
-        <!-- ── CROP GALLERY (produce1–produce12) ── -->
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce1.png';" src="images/produce1.png" alt="Produce 1" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Premium Crop Production</h4><p>Healthy yields through expert agronomic support</p></div></div>
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce2.png';" src="images/produce2.png" alt="Produce 2" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Fresh Produce</h4><p>Quality crops grown the SmartFarm way</p></div></div>
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce3.png';" src="images/produce3.png" alt="Produce 3" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Vegetable Production</h4><p>High-density planting for commercial yields</p></div></div>
@@ -771,12 +732,11 @@ footer ul li a:hover{color:var(--gold)}
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce5.png';" src="images/produce5.png" alt="Produce 5" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Market-Ready Crops</h4><p>Export-quality standards met consistently</p></div></div>
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce6.png';" src="images/produce6.png" alt="Produce 6" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Harvest Quality</h4><p>From field to market with SmartFarm</p></div></div>
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce7.png';" src="images/produce7.png" alt="Produce 7" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Crop Diversity</h4><p>Multiple crop varieties for resilient income</p></div></div>
-        <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce8.png';" src="images/produce8.png" alt="Produce 8" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Organic Farming</h4><p>Sustainable practices for premium produce</p></div></div>
+        <div class="gal-slide" data-cat="crops"><img onerror="this.orenror=null;this.src='images/Produce8.png';" src="images/produce8.png" alt="Produce 8" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Organic Farming</h4><p>Sustainable practices for premium produce</p></div></div>
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce9.png';" src="images/produce9.png" alt="Produce 9" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Field to Table</h4><p>Nutritious crops grown right here in Kenya</p></div></div>
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce10.png';" src="images/produce10.png" alt="Produce 10" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Yield Maximisation</h4><p>More output per acre through smart agronomy</p></div></div>
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce11.png';" src="images/produce11.png" alt="Produce 11" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Crop Success Stories</h4><p>Proven results across Kenyan farms</p></div></div>
         <div class="gal-slide" data-cat="crops"><img onerror="this.onerror=null;this.src='images/Produce12.png';" src="images/produce12.png" alt="Produce 12" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Premium Produce</h4><p>Excellence from seed to harvest</p></div></div>
-        <!-- ── IRRIGATION SYSTEMS (irrigation1–irrigation11) ── -->
         <div class="gal-slide" data-cat="irrigation"><img onerror="this.onerror=null;this.src='images/Irrigation1.png';" src="images/irrigation1.png" alt="Irrigation 1" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Precision Drip Irrigation</h4><p>Water-efficient systems for Kenya's climate</p></div></div>
         <div class="gal-slide" data-cat="irrigation"><img onerror="this.onerror=null;this.src='images/Irrigation2.png';" src="images/irrigation2.png" alt="Irrigation 2" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Drip Line Installation</h4><p>Professional setup by SmartFarm engineers</p></div></div>
         <div class="gal-slide" data-cat="irrigation"><img onerror="this.onerror=null;this.src='images/Irrigation3.png';" src="images/irrigation3.png" alt="Irrigation 3" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Water Management Systems</h4><p>Smart water use for sustainable farming</p></div></div>
@@ -789,19 +749,13 @@ footer ul li a:hover{color:var(--gold)}
         <div class="gal-slide" data-cat="irrigation"><img onerror="this.onerror=null;this.src='images/Irrigation10.png';" src="images/irrigation10.png" alt="Irrigation 10" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Irrigation Maintenance</h4><p>Ongoing support to keep systems running</p></div></div>
         <div class="gal-slide" data-cat="irrigation"><img onerror="this.onerror=null;this.src='images/Irrigation11.png';" src="images/irrigation11.png" alt="Irrigation 11" loading="lazy" style="width:100%;height:100%;object-fit:cover"><div class="gal-caption"><h4>Complete Water Solutions</h4><p>End-to-end irrigation by SmartFarm Kenya</p></div></div>
       </div>
-      <!-- Nav arrows -->
       <div class="gal-nav">
         <button class="gal-arrow" onclick="galPrev()">‹</button>
         <button class="gal-arrow" onclick="galNext()">›</button>
       </div>
     </div>
-
-    <!-- Dots -->
     <div class="gal-dots" id="galDots"></div>
-
-    <!-- Thumbnail strip -->
     <div class="gal-thumbs" id="galThumbs">
-      <!-- Farm -->
       <div class="gal-thumb thumb-fp active" onclick="galGoTo(0)"><img onerror="this.onerror=null;this.src='images/Farm1.png';" src="images/farm1.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(1)"><img onerror="this.onerror=null;this.src='images/Farm2.png';" src="images/farm2.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(2)"><img onerror="this.onerror=null;this.src='images/Farm3.jpg';" src="images/farm3.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
@@ -814,7 +768,6 @@ footer ul li a:hover{color:var(--gold)}
       <div class="gal-thumb thumb-fp" onclick="galGoTo(9)"><img onerror="this.onerror=null;this.src='images/Farm10.png';" src="images/farm10.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(10)"><img onerror="this.onerror=null;this.src='images/Farm11.png';" src="images/farm11.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-fp" onclick="galGoTo(11)"><img onerror="this.onerror=null;this.src='images/Farm12.png';" src="images/farm12.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
-      <!-- Crops -->
       <div class="gal-thumb thumb-cg" onclick="galGoTo(12)"><img onerror="this.onerror=null;this.src='images/Produce1.png';" src="images/produce1.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-cg" onclick="galGoTo(13)"><img onerror="this.onerror=null;this.src='images/Produce2.png';" src="images/produce2.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-cg" onclick="galGoTo(14)"><img onerror="this.onerror=null;this.src='images/Produce3.png';" src="images/produce3.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
@@ -827,7 +780,6 @@ footer ul li a:hover{color:var(--gold)}
       <div class="gal-thumb thumb-cg" onclick="galGoTo(21)"><img onerror="this.onerror=null;this.src='images/Produce10.png';" src="images/produce10.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-cg" onclick="galGoTo(22)"><img onerror="this.onerror=null;this.src='images/Produce11.png';" src="images/produce11.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-cg" onclick="galGoTo(23)"><img onerror="this.onerror=null;this.src='images/Produce12.png';" src="images/produce12.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
-      <!-- Irrigation -->
       <div class="gal-thumb thumb-ir" onclick="galGoTo(24)"><img onerror="this.onerror=null;this.src='images/Irrigation1.png';" src="images/irrigation1.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-ir" onclick="galGoTo(25)"><img onerror="this.onerror=null;this.src='images/Irrigation2.png';" src="images/irrigation2.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="gal-thumb thumb-ir" onclick="galGoTo(26)"><img onerror="this.onerror=null;this.src='images/Irrigation3.png';" src="images/irrigation3.png" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
@@ -843,12 +795,15 @@ footer ul li a:hover{color:var(--gold)}
   </div>
 </section>
 
-<!-- ═══ AD STRIP ═══ -->
+<!-- ═══ AD STRIP MID 2 ═══ -->
 <div style="background:var(--cream);padding:12px 5%;display:flex;justify-content:center">
-  <div class="ad-banner ad-strip"><span class="ad-label">Advertisement</span>Ad Slot — 728×60</div>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9268211848028933" crossorigin="anonymous"></script>
+  <!-- MID 2 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9268211848028933" data-ad-slot="9332010477" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 </div>
 
-<!-- ═══ SOCIAL FEEDS — 3 COLUMN ═══ -->
+<!-- ═══ SOCIAL FEEDS ═══ -->
 <section class="sec social-bg" id="social">
   <div class="con">
     <div class="social-hd rv">
@@ -857,7 +812,6 @@ footer ul li a:hover{color:var(--gold)}
       <p class="sd" style="margin:0 auto;color:rgba(255,255,255,.5)">Get the latest farming tips, crop updates, and expert insights from SmartFarm Consultants Kenya across all platforms.</p>
     </div>
     <div class="social-grid">
-
       <!-- FACEBOOK -->
       <div class="social-col rv">
         <div class="sc-header">
@@ -870,7 +824,7 @@ footer ul li a:hover{color:var(--gold)}
         </div>
         <div class="sc-feed" style="padding:0">
           <div id="fb-root"></div>
-          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
           <div class="fb-page"
             data-href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/"
             data-tabs="timeline"
@@ -881,7 +835,6 @@ footer ul li a:hover{color:var(--gold)}
             data-hide-cover="false"
             data-show-facepile="false">
           </div>
-          <!-- Fallback if SDK blocked -->
           <div id="fb-fallback" style="display:none;padding:20px 24px 24px">
             <div class="sc-post">
               <div class="sc-post-img fp"><div style="font-size:2rem;opacity:.5">📘</div></div>
@@ -893,7 +846,6 @@ footer ul li a:hover{color:var(--gold)}
         </div>
         <div class="sc-cta"><a href="https://www.facebook.com/people/Thomas-Muthama/100087927381603/" target="_blank" class="fb-cta">📘 Open Facebook Page →</a></div>
       </div>
-
       <!-- YOUTUBE -->
       <div class="social-col rv2">
         <div class="sc-header">
@@ -905,38 +857,16 @@ footer ul li a:hover{color:var(--gold)}
           <a href="https://www.youtube.com/@smartfarmconsultants" target="_blank" class="sc-follow yt-f">🔔 Subscribe</a>
         </div>
         <div class="sc-feed" style="padding:16px 20px 20px;gap:14px">
-          <!-- Shorts can't be embedded — clickable cards link directly to YouTube -->
           <div style="border-radius:12px;overflow:hidden;background:#000">
-            <iframe
-              width="100%" height="180"
-              src="https://www.youtube-nocookie.com/embed/YEIOZQOFEK8?rel=0"
-              title="SmartFarm Kenya – Farm Video 1"
-              loading="lazy"
-              frameborder="0"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style="display:block">
-            </iframe>
+            <iframe width="100%" height="180" src="https://www.youtube-nocookie.com/embed/YEIOZQOFEK8?rel=0" title="SmartFarm Kenya – Farm Video 1" loading="lazy" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe>
           </div>
           <div style="border-radius:12px;overflow:hidden;background:#000;margin-top:14px">
-            <iframe
-              width="100%" height="180"
-              src="https://www.youtube-nocookie.com/embed/nCEQjX5GsCo?rel=0"
-              title="SmartFarm Kenya – Farm Video 2"
-              loading="lazy"
-              frameborder="0"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style="display:block">
-            </iframe>
+            <iframe width="100%" height="180" src="https://www.youtube-nocookie.com/embed/nCEQjX5GsCo?rel=0" title="SmartFarm Kenya – Farm Video 2" loading="lazy" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe>
           </div>
           <p style="font-size:.72rem;color:rgba(255,255,255,.35);text-align:center;margin-top:6px">👍 Like · Share · Subscribe · Comment</p>
         </div>
         <div class="sc-cta"><a href="https://www.youtube.com/@smartfarmconsultants" target="_blank" class="yt-cta">▶ Visit YouTube Channel →</a></div>
       </div>
-
       <!-- INSTAGRAM/TIKTOK -->
       <div class="social-col rv3">
         <div class="sc-header">
@@ -951,22 +881,20 @@ footer ul li a:hover{color:var(--gold)}
           <div style="border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:20px;text-align:center">
             <div style="font-size:2rem;margin-bottom:8px">📷</div>
             <p style="font-size:.78rem;color:rgba(255,255,255,.6);margin-bottom:12px;line-height:1.6">Follow <strong>@smartfarmconsultants</strong> on Instagram for daily farm updates, tips &amp; success stories</p>
-            <a href="https://www.instagram.com/smartfarmconsultants/" target="_blank"
-              style="display:inline-block;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366);color:#fff;padding:8px 20px;border-radius:50px;font-size:.75rem;font-weight:700;text-decoration:none">📷 Follow on Instagram</a>
+            <a href="https://www.instagram.com/smartfarmconsultants/" target="_blank" style="display:inline-block;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366);color:#fff;padding:8px 20px;border-radius:50px;font-size:.75rem;font-weight:700;text-decoration:none">📷 Follow on Instagram</a>
           </div>
           <div style="border-radius:12px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:20px;text-align:center;margin-top:14px">
             <div style="font-size:2rem;margin-bottom:8px">🎵</div>
             <p style="font-size:.78rem;color:rgba(255,255,255,.6);margin-bottom:12px;line-height:1.6">Watch <strong>@muthamathomas</strong> on TikTok for short farm videos, tutorials &amp; behind-the-scenes</p>
-            <a href="https://www.tiktok.com/@muthamathomas" target="_blank"
-              style="display:inline-block;background:#010101;color:#fff;border:1px solid rgba(255,255,255,.2);padding:8px 20px;border-radius:50px;font-size:.75rem;font-weight:700;text-decoration:none">🎵 Follow on TikTok</a>
+            <a href="https://www.tiktok.com/@muthamathomas" target="_blank" style="display:inline-block;background:#010101;color:#fff;border:1px solid rgba(255,255,255,.2);padding:8px 20px;border-radius:50px;font-size:.75rem;font-weight:700;text-decoration:none">🎵 Follow on TikTok</a>
           </div>
         </div>
         <div class="sc-cta"><a href="https://www.instagram.com/smartfarmconsultants/" target="_blank" class="ig-cta">📷 Visit Instagram / TikTok →</a></div>
       </div>
-
     </div>
   </div>
 </section>
+
 <!-- ═══ CONTACT ═══ -->
 <section class="sec ct-bg" id="contact">
   <div class="con">
@@ -984,32 +912,16 @@ footer ul li a:hover{color:var(--gold)}
       </div>
       <div class="ct-form rv2">
         <h3>📝 Request a Consultation</h3>
-
-        <!-- GOOGLE FORM EMBED -->
         <div id="gform-wrap" style="border-radius:16px;overflow:hidden;border:1.5px solid rgba(0,0,0,.06);margin-bottom:20px;">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdtEJMWvJuM9LNFYkbSmjgNnLO9tlA7ateCE6fjBM1FPofEew/viewform?embedded=true"
-            width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0"
-            style="display:block">
-            Loading form…
-          </iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtEJMWvJuM9LNFYkbSmjgNnLO9tlA7ateCE6fjBM1FPofEew/viewform?embedded=true" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0" style="display:block">Loading form…</iframe>
         </div>
-
-        <!-- DIVIDER -->
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
           <div style="flex:1;height:1px;background:#e4e4dc"></div>
           <span style="font-size:.75rem;color:var(--mu);font-weight:600;letter-spacing:1px;text-transform:uppercase">or contact directly</span>
           <div style="flex:1;height:1px;background:#e4e4dc"></div>
         </div>
-
-        <!-- WHATSAPP BUTTON -->
-        <a id="wa-btn"
-          href="https://wa.me/254711580975?text=Hello%20Thomas%2C%20I%20found%20your%20SmartFarm%20website%20and%20I%27d%20like%20to%20request%20a%20consultation."
-          target="_blank"
-          style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px;background:#25D366;color:#fff;border-radius:12px;font-size:.95rem;font-weight:700;text-decoration:none;transition:all .25s;box-shadow:0 6px 24px rgba(37,211,102,.35)">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
+        <a id="wa-btn" href="https://wa.me/254711580975?text=Hello%20Thomas%2C%20I%20found%20your%20SmartFarm%20website%20and%20I%27d%20like%20to%20request%20a%20consultation." target="_blank" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px;background:#25D366;color:#fff;border-radius:12px;font-size:.95rem;font-weight:700;text-decoration:none;transition:all .25s;box-shadow:0 6px 24px rgba(37,211,102,.35)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Chat on WhatsApp — +254 711 580 975
         </a>
         <p style="text-align:center;font-size:.74rem;color:var(--mu);margin-top:10px">Opens WhatsApp with a pre-filled message to Thomas</p>
@@ -1035,11 +947,14 @@ footer ul li a:hover{color:var(--gold)}
     </div>
     <div><h5>Services</h5><ul><li><a href="#services">Farm Planning</a></li><li><a href="#services">Irrigation Systems</a></li><li><a href="#services">Soil Analysis</a></li><li><a href="#services">Market Linkage</a></li><li><a href="#services">Training</a></li></ul></div>
     <div><h5>Company</h5><ul><li><a href="#about">About Us</a></li><li><a href="#why">Why Choose Us</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#team">Our Team</a></li><li><a href="#contact">Contact</a></li></ul></div>
-    <div><h5>Contact</h5><ul><li><a href="tel:+254711580975">+254 711 580 975</a></li><li></a></li><li><a href="#">Machakos, Kenya</a></li></ul></div>
+    <div><h5>Contact</h5><ul><li><a href="tel:+254711580975">+254 711 580 975</a></li><li><a href="#">Machakos, Kenya</a></li></ul></div>
   </div>
-  <!-- Footer Ad (smaller) -->
+  <!-- Footer Ad Bottom -->
   <div style="display:flex;justify-content:center;padding:0 0 20px">
-    <div class="ad-banner" style="width:728px;max-width:100%;height:60px"><span class="ad-label">Advertisement</span>Ad Slot — 728×60</div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9268211848028933" crossorigin="anonymous"></script>
+    <!-- Bottom -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9268211848028933" data-ad-slot="4713604036" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
   </div>
   <div class="f-bot">
     <span>© 2026 SmartFarm Consultants Kenya. All rights reserved.</span>
@@ -1048,7 +963,7 @@ footer ul li a:hover{color:var(--gold)}
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ── NAV scroll ── */
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
@@ -1077,7 +992,6 @@ const galThumbs = document.querySelectorAll('.gal-thumb');
 const galDotsEl = document.getElementById('galDots');
 const totalGal = galSlides.length;
 
-// Build dots
 for (let i = 0; i < totalGal; i++) {
   const d = document.createElement('div');
   d.className = 'gdot' + (i === 0 ? ' active' : '');
@@ -1094,12 +1008,10 @@ function galGoTo(n) {
 function galNext() { galGoTo(galCurrent + 1); }
 function galPrev() { galGoTo(galCurrent - 1); }
 
-// Auto slide
 let galTimer = setInterval(galNext, 4500);
 document.getElementById('galSlider').addEventListener('mouseenter', () => clearInterval(galTimer));
 document.getElementById('galSlider').addEventListener('mouseleave', () => { galTimer = setInterval(galNext, 4500); });
 
-// Swipe
 let touchStartX = 0;
 galTrack.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
 galTrack.addEventListener('touchend', e => {
@@ -1107,7 +1019,6 @@ galTrack.addEventListener('touchend', e => {
   if (Math.abs(diff) > 50) diff > 0 ? galNext() : galPrev();
 });
 
-// Gallery tab filter
 function switchGallery(cat) {
   document.querySelectorAll('.gtab').forEach(t => t.classList.remove('active'));
   event.target.classList.add('active');
